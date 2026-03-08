@@ -10,9 +10,9 @@ const Benefits = () => {
     <Section id="features">
         <div className="container relative z-2">
             <Heading className="md:max-w-md lg:max-w-2xl" title="Chat Smarter, Not Harder with Brainwave"/>
-            <div className="flex flex-wrap gap-10 mb-10">
+            <div className="flex flex-wrap justify-center gap-10 mb-10">
                 {benefits.map((item) => ( /* item is the name given to each benefit from constants/index.js, so we can access properties of each benefit using item.propertyName */
-                    <div className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+                    <div className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] w-full md:max-w-[24rem]"
                     style={{ backgroundImage: `url(${item.backgroundUrl})`,}} key={item.id}>
                         <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none" >
                             <h5 className="h5 mb-5">{item.title}</h5>
